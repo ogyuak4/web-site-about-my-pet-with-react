@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;  /* bu csste sık kullanılan, sorun yaşamamak için yabılan bişi*/
+}
+
+body {
+    margin: 0;   /*tamamen sola kaysınlar diye yaptık*/
+    font-family: Inter, sans-serif;  /* bu inter ne işe yarıyo anlamadım hoca yaptı diye yaptım sen şu şekilde yapabilirsin direkt: font-family: sans-serif;  */
+    background-color: #cad5e7;
+
+
+
+}                                    
+    
+
+
+nav {
+    display: flex;  /*navbardaki 3 öğe üst üste durmasın*/
+    align-items: center;  /*navbardaki yazılar ortaya gelsin, üste yakın durmasın*/
+    background-color: #21222A;
+    padding: 30px 20px;
+    height: 90px;
+}
+
+.nav--logo_text, .nav--title {
+    margin: 0;
+}
+
+.nav--logo_text  {
+    margin-right: auto;
+    color: #61DAFB;
+    font-weight: 700;  /* yazının dolgunluğu etine butuna düşkünlüğü */
+    font-size: 22px;   /* yazıyı büyüttük bi tık*/
+}
+
+
+.nav--title {
+    color: #DEEBF8;
+    font-weight: 600;
+}
+
+
+.nav--icon {
+    height: 30px;
+    margin-right: 7px;
+}
+
+
+
+main {
+    padding: 57px 27px;
+    color:rgb(72, 31, 31);
+    background-image: url(./images/react-icon-large.jpg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 55%;
+    background-size: contain;
+    background-origin: content-box;
+    
+}
+
+
+.main--title {
+    margin: 0;
+    font-size: 39px;
+    letter-spacing: -0.05em; /*bi kelimedeki harfler arası uzaklık*/
+}
+
+.main--facts {
+    margin-top: 46px;
+    max-width: 4000px; /* liste elemanları bi noktadan sonra aşşağı insin sağa doğru uzamaktansa*/
+}
+
+
+.main--facts > li {
+    line-height: 19px; /* çok önemli deil, liste elemanları arasındaki mesafe*/
+    padding-block: 10px; /* css şeysi bu, listenin sadece üst ve aşşasına padding veriyor*/
+}
+
+
+.main--facts > li::marker {  /*marker şeysi işte*/
+    font-size: 1.4rem;
+    color: #fb6161;
+}
